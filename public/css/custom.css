@@ -1,0 +1,312 @@
+/*menu */
+
+.site-header .navbar-nav {
+    text-align: center !important;
+}
+
+@media (min-width: 993px) {
+.navbar-nav > li > a {
+    font-size: 12px !important;
+    color: #333;
+    font-weight: 600;
+}
+}
+
+/* body */
+
+.grupales .title_subtitle {
+    color: #000 !important;
+}
+
+.grupales .title_primary {
+    color: #000 !important;
+}
+
+.width-logo.sm-logo {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.navbar-nav > li {
+    padding-right: 10px !important;
+}
+
+nav.width-navigation {
+    margin: 0 auto;
+    display: table !important;
+}
+
+.cotiza {
+    background: url(/img/cotiza.png);
+    height: 231px;
+}
+
+.suscripcion {
+    background: url(/img/suscripcion.png);
+    height: 231px;
+}
+
+.col-sm-6.cotiza {
+    text-align: center;
+}
+
+.cotiza img {
+    margin-right: 58px;
+}
+
+.grupales i.lnr.lnr-chevron-right {
+    color: #000;
+}
+
+.grupales i.lnr.lnr-chevron-left {
+    color: #000;
+}
+
+.section-background.promociones {
+    background: #f2f2f2;
+}
+
+.section-background.populares {
+    background: url(/img/populares-fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper-footer {
+    background: url(/img/fondo-footer.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    color: #aaa6a6 !important;
+    height: 679px;
+    /*font-size: 16px !important;*/
+}
+
+.wrapper-footer a {
+    color: #aaa6a6 !important;
+    /*font-size: 16px;*/
+}
+
+h3.widget-title {
+    color: #0169ac !important;
+}
+
+ul.logos {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    list-style: none !important;
+}
+
+ul.logos li {
+    float: right;
+    margin-right: 10px;
+}
+
+.botoom-footer {
+    border-bottom: 1px solid #5b6366;
+}
+
+.copyright {
+    background: #0169ac;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright a {
+    color: #fff;
+}
+
+.siguenos {
+    background: #6ebe4d;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 73%;
+}
+
+.redes-sociales {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.logos {
+    display: flex;
+}
+
+.logos > div {
+    flex: 1 1 auto;
+}
+
+/* estilos redes sociales */
+
+.social {
+    
+    margin-bottom: 0 !important;
+    margin-top: 9px;
+}
+
+.social ul {
+    margin: 0 auto;
+}
+
+.social ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 2px;
+}
+
+.social ul li a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    color: #fff;
+    background: #6ebe4d;  
+}
+
+.social ul li a:hover {opacity: 0.8;}
+
+
+
+@media only screen and (max-width : 768px) {
+
+    .wrapper-subscribe {
+    
+    position: inherit;
+
+}
+
+.wrapper-footer {
+    background: #fff !important;
+}
+
+    }
+
+
+button.btn.btn-default {
+    background: #6ebe4d;
+    color: #fff;
+    font-size: 22px;
+}
+
+.navigation-menu {
+    background: #fff !important;
+}
+
+.contact-top {
+    font-size: 15px;
+    padding-top: 10px;
+    color: #6ebe4d;
+}
+
+.contact-top a {
+    font-size: 15px;
+    color: #6ebe4d !important;
+}
+
+ul.top-social {
+    margin-bottom: 8px;
+    margin-top: -2px;
+}
+
+.header_top_bar .top_bar_info {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 12px;
+}
+
+
+.col-sm-6.siguenos-footer {
+    background: url(/img/fondo-registro.png);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 408px;
+}
+
+.siguenos-footer h3 {
+    color: #fff;
+    line-height: 30px;
+    
+    
+}
+
+
+.col-sm-6.suscripcion-footer {
+    background: url(/img/fondo-siguenos.png);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 408px;
+}
+
+.suscripcion-footer h3 {
+    color: #fff;
+    line-height: 30px;
+    
+    
+}
+
+.sub-title {
+    margin: 0 auto;
+    display: table;
+    width: 75%;
+}
+
+.btn-descarga {
+    background: #0169ac;
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:#fff;
+    font-weight: 700;
+}
+
+.btn-descarga a {
+    color: #fff;
+}
+
+.btn-descarga a:hover {
+    color: #333;
+}
+
+
+/* clases ocultas provicionalmente */
+
+.tour_code {
+    display: none;
+}
+
+.tour-share {
+    display: none;
+}
+
+.title-single {
+    display: none;
+}
+
+/* sub-header */
+
+.sub-header {
+    padding-top: 203px;
+}
+
+.home-content {
+    padding-top: 203px;
+}
+
+.circuito-page .top_site_main {
+    
+    background-image: url(/img/banner-europa-asia-oriente.png);
+    background-size: cover;
+}
+
