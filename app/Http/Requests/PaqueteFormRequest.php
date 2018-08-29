@@ -24,8 +24,9 @@ class PaqueteFormRequest extends FormRequest
     public function rules()
     {
        return [
-            'titulo'=>'required|max:50',
+            'titulo'=>'required',
             'descripcion'=>'max:256',
+            
         ];
     }
 }

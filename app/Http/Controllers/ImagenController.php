@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Imagen;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\UploadedFile;
 
 use DB;
 
@@ -13,35 +15,40 @@ class ImagenController extends Controller
     
 public function index(Request $request)
     {
-        if ($request)
-        {
-            $query=trim($request->get('searchText'));
-            $imagenes=DB::table('imagenes')->where('file_name','LIKE','%'.$query.'%')
-            ->orderBy('id','desc')
-            ->paginate(7);
-            return view('admin.imagenes.index',["imagenes"=>$imagenes,"searchText"=>$query]);
-        }
+        
     }
 
 
 public function create()
     {
-        
+
+
     }
-    public function store (Request $request)
+
+    public function store(Request $request,$id)
+
     {
-       
-      $file = $request->file('file');
-    $path = public_path() . '/uploads';
+
+    $file = $request->file('file');
+
+    $path = $file->store('paquetes');
+
     $fileName = uniqid() . $file->getClientOriginalName();
 
-    $file->move($path, $fileName);
+    /* $file->move($path, $fileName); */
+
+    $imagen = new Imagen();
+    
+    $imagen->paquete_id = $id;
+    $imagen->file_name = $fileName;
+    $imagen->url = $path;
+    $imagen->save();
+
+    return 'imagen guardada';
 
     
+}
 
-    return 'tu imagen fue subida con exito';
-        
-        }
 
     public function show($id)
     {
@@ -56,7 +63,7 @@ public function create()
         
     }
 
-    public function destroy($id)
+     public function destroy($id)
     {
         
     }

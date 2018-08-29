@@ -25,7 +25,9 @@ class ImagenFormRequest extends FormRequest
     {
        return [
             
-            'file_name'=>'max:256',
+            
+            'url'=>'max:256',
+            'file' => 'required',
         ];
     }
 }

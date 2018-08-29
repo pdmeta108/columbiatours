@@ -15,8 +15,9 @@ class CreateImagenesTable extends Migration
     {
         Schema::create('imagenes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('imagen_id')->unsigned();
             $table->string('file_name');
+            $table->integer('paquete_id');
+            $table->string('url');
             $table->timestamps();
         });
     }

@@ -351,6 +351,10 @@
 <script src="/adminlte/js/demo.js"></script>
 <!-- DROPZONE -->
 <script src="/adminlte/js/dropzone.js"></script>
+<!-- ckeditor -->
+<script src="/adminlte/bower_components/ckeditor/ckeditor.js"></script>
+@yield('scripts')
+
 </body>
 </html>
 
