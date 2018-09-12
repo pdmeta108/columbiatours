@@ -37,9 +37,32 @@ nav.width-navigation {
     display: table !important;
 }
 
+.form-paquetes {
+  position: relative;
+  left: 20%;
+}
+
+@media  only screen and (max-width: 768px) {
+  .form-paquetes {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .select-paquetes {
+  margin-left: 53%;
+  }
+}
+
 .cotiza {
     background: url(/img/cotiza.png);
     height: 231px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cotiza {
+    height: 300px;
+  }
 }
 
 .suscripcion {
@@ -48,7 +71,7 @@ nav.width-navigation {
 }
 
 .btn-billing {
-  margin-bottom: 135px;
+  margin-top: 35px;
 }
 
 .btn-suscription  {
@@ -252,9 +275,14 @@ ul.top-social {
 
 .siguenos-footer h3 {
     color: #fff;
-    line-height: 30px;
+    margin-top: 10px;
+    line-height: 1.4em;
 
 
+}
+
+.siguenos-footer h3 strong {
+  font-size: 28px;
 }
 
 
@@ -262,6 +290,7 @@ ul.top-social {
     background: url(/img/fondo-siguenos.png);
     padding-top: 80px;
     padding-bottom: 80px;
+    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 408px;
@@ -269,9 +298,14 @@ ul.top-social {
 
 .suscripcion-footer h3 {
     color: #fff;
-    line-height: 30px;
+    margin-top: 10px;
+    line-height: 1.4em;
 
 
+}
+
+.suscripcion-footer h3 strong {
+  font-size: 28px;
 }
 
 .sub-title {
@@ -349,8 +383,15 @@ ul.top-social {
 }
 
   .amadeus-title {
+    margin-top: 70px;
     margin-bottom: 70px;
   }
+
+@media only screen and (max-width: 768px) {
+  .amadeus-title {
+    display: none;
+  }
+}
 
 .circuito-page .top_site_main {
 
@@ -408,5 +449,12 @@ ul.top-social {
 @media only screen and (max-width: 768px) {
   .tabcontent {
     background-color: rgba(0,0,0,1);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .mobile-promo {
+    margin-left: 12%;
+    margin-bottom: 30px;
   }
 }

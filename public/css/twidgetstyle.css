@@ -164,7 +164,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .twidget-auto-fill-wrapper ul li:hover .twidget-city-airport-name,
 .twidget-auto-fill-wrapper ul li:hover .twidget-city-name span {color:#fff !important;}
 @media (max-width: 1920px){
-.twidget-container{width:980px;}
+.twidget-container{width:100%;}
 #twidget-tab1 .twidget-form-list li.twidget-origin, #twidget-tab1 .twidget-form-list li.twidget-destination{width:49.5%; margin-bottom:15px;}
 #twidget-tab1 .twidget-form-list li.twidget-destination{margin-right:0;}
 #twidget-tab1 .twidget-form-list li.twidget-flight-dates{width:43%;}
@@ -174,7 +174,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 
 }
 @media (max-width: 1920px){
-.twidget-container{width:900px;}
+.twidget-container{width:100%;}
 #twidget-tab2 .twidget-form-list li.twidget-city-hotel{width:100%; margin-right:0; margin-bottom:15px;}
 #twidget-tab2 .twidget-form-list li.twidget-hotel-dates{width:43%;}
 #twidget-tab2 .twidget-form-list li.twidget-hotel-guest{width:25%;}

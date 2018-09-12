@@ -7,16 +7,16 @@
 								<div class="social">
 									<ul class="top-social">
 										<li>
-											<a target="_blank" class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+											<a target="_blank" class="facebook" href="https://www.facebook.com/Columbia-Tours-178463502222553/"><i class="fa fa-facebook"></i></a>
 										</li>
 										<li>
-											<a target="_blank" class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+											<a target="_blank" class="twitter" href="https://mobile.twitter.com/columbiatourspa/"><i class="fa fa-twitter"></i></a>
 										</li>
 										<li>
-											<a target="_blank" class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+											<a target="_blank" class="pinterest" href="https://www.instagram.com/columbiatourspa/"><i class="fa fa-instagram"></i></a>
 										</li>
 										<li>
-											<a target="_blank" class="googleplus" href="#"><i class="fa fa-google"></i></a>
+											<a target="_blank" class="googleplus" href="https://www.youtube.com/user/Columbiatourspa"><i class="fa fa-youtube"></i></a>
 										</li>
 									</ul>
 								</div>
@@ -27,7 +27,7 @@
 						<aside id="text-7" class="widget widget_text">
 							<div class="contact-top">
 								<ul class="top_bar_info clearfix">
-									
+
 									<li><i class="fa fa-phone fa-fw"></i> 00 (507) 301-3330  </li>
 									<li>
 										<i class="fa fa-envelope fa-fw"></i><a href="mailto:info@columbiatours.com.pa"> info@columbiatours.com.pa</a>
@@ -35,7 +35,7 @@
 								</ul>
 							</div>
 						</aside>
-						
+
 					</div>
 				</div>
 			</div>
@@ -61,43 +61,43 @@
 					<ul class="nav navbar-nav menu-main-menu side-nav" id="mobile-demo">
 						<li class="current-menu-ancestor current-menu-parent">
 							<a href="/">HOME</a>
-							
+
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ url('paquetes') }}">PAQUETES</a>
-							
+
 						</li>
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ url('circuitos') }}">CIRCUITOS ASIA-EUROPA-ORIENTE</a>
-							
+
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ url('cruceros') }}">CRUCEROS</a>
-							
+
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ url('vuelos') }}">VUELOS</a>
-							
+
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ url('trenes') }}">TRENES</a>
-							
+
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ url('autos') }}">AUTOS</a>
-							
+
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ url('seguros') }}">SEGUROS</a>
-							
+
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ url('contacto') }}">CONTACTO</a>
-							
+
 						</li>
 
-						
+
 						<!--<li class="menu-right">
 							<ul>
 								<li id="travel_social_widget-2" class="widget travel_search">
@@ -120,5 +120,5 @@
 					</ul>
 				</nav>
 			  </div>
-			</div>  
+			</div>
 		</div>

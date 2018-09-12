@@ -172,8 +172,8 @@
               hotel_guests_select_children: 'Niños y adolescentes de hasta 17<br>años',
               hotel_guests_select_children_age: 'Edad',
               avia_passengers_select_infants: 'Infantes de hasta 2<br>años',
-              avia_passengers_economy_class: 'Clase Económica',
-              avia_passengers_business_class: 'Clase Ejecutiva',
+              avia_passengers_economy_class: '',
+              avia_passengers_business_class: '',
               avia_passengers_business_class_checkbox: 'Clase Ejecutiva',
               avia_passengers_select_ready_button: 'Hecho',
               avia_submit_button_text: 'Busqueda',
@@ -182,7 +182,7 @@
               datepicker_language: 'es',
               datepicker_return_ticket_caption: 'No se necesita ticket de retorno',
               weekdays_short: ["do", "lu", "ma", "mi", "ju", "vi", "sa"],
-              month_names: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+              month_names: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Julo", "Ag", "Sep", "Oct", "Nov", "Dic"],
               avia_logo_link: 'https://www.columbiatours.com.pa/',
               avia_logo_content: '<div class="twidget-logo-image twidget-jetradar-logo-img" width="30" height="30"></div>Columbia Tours',
               hotel_logo_link: 'https://hotellook.com/',
@@ -1010,8 +1010,8 @@
             '                                    </ul>'+
             '                                    <div class="twidget-pas-class">'+
             '                                        <div class="twidget-pass-check">'+
-            '                                            <input type="checkbox" class="twidget-pass-class">'+
-            '                                            <label>' + _this.settings.localization.avia_passengers_business_class_checkbox + '</label>'+
+            // '                                            <input type="checkbox" class="twidget-pass-class">'+
+            // '                                            <label>' + _this.settings.localization.avia_passengers_business_class_checkbox + '</label>'+
             '                                            <input type="hidden" name="trip_class" value="0">'+
             '                                        </div>'+
             '                                    </div>'+

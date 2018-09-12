@@ -11,45 +11,50 @@
 				</video>
 				<div class="content-slider">
 
-					<div class="col-sm-12 col-md-12 amadeus-title">
-						<p>Find your special tour today </p>
-						<h2>With Columbia Tours </h2>
-						<p><a href="#" class="btn btn-slider">VIEW TOURS </a></p>
-					</div>
-					<div class="col-sm-12 col-md-12">
-						<div class="container">
-							<!-- Tab links -->
-								<div class="tab">
-  								<button id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')" >Amadeus</button>
-  								<button class="tablinks" onclick="openCity(event, 'Paris')">PullmanTour</button>
-  								<button class="tablinks" onclick="openCity(event, 'Tokyo')">Assist Card</button>
-									<button class="tablinks" onclick="openCity(event, 'Hide')">Ocultar</button>
-								</div>
 
-								<!-- Tab content -->
-								<div id="London" class="tabcontent">
-  								
-  								<div class="twidget-container" id="twidget"></div>
-								</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="row">
+							<div class="container" style="width: 90%">
+								<!-- Tab links -->
+									<div class="tab">
+	  								<button id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')" >Amadeus</button>
+	  								<button class="tablinks" onclick="openCity(event, 'Paris')">PullmanTour</button>
+	  								<button class="tablinks" onclick="openCity(event, 'Tokyo')">Assist Card</button>
+										<button class="tablinks" onclick="openCity(event, 'Hide')">Ocultar</button>
+									</div>
 
-								<div id="Paris" class="tabcontent">
-  								
-  								<p>Paris is the capital of France.</p>
-								</div>
+									<!-- Tab content -->
+									<div id="London" class="tabcontent">
+	  								
 
-								<div id="Tokyo" class="tabcontent">
-  								
-  								<p>Tokyo is the capital of Japan.</p>
-								</div>
-								<div id="Hide" class="tabcontent" style="padding: 0; border: none">
-  								
-  								
-								</div>
-						</div>
-						
-						
-					</div>
+	  									<div class="twidget-container" id="twidget"></div>
 
+									</div>
+
+									<div id="Paris" class="tabcontent">
+	  								
+	  								<p>Paris is the capital of France.</p>
+									</div>
+
+									<div id="Tokyo" class="tabcontent">
+	  								
+	  								<p>Tokyo is the capital of Japan.</p>
+									</div>
+									<div id="Hide" class="tabcontent" style="padding: 0; border: none">
+	  								
+	  								
+									</div>
+							</div>
+							
+							
+
+							</div>
+							</div>
+							<div class="col-sm-12 col-md-6 amadeus-title">
+								<p>Encuentra tu tour especial hoy</p>
+								<h2>Con Columbia Tours</h2>
+								<p><a href="#" class="btn btn-slider">VER TOURS</a></p>
+							</div>
 				</div>
 			</div>
 
@@ -61,7 +66,7 @@
 	<?php echo Form::open(array('url'=>'paquetes/destinos','method'=>'GET','autocomplete'=>'off','role'=>'search')); ?>
 
 
-							<ul class="hb-form-table">
+							<ul class="hb-form-table form-paquetes">
 
 								<!--<li class="hb-form-field">
 									<div class="hb-form-field-input hb_input_field">
@@ -75,7 +80,7 @@
 								</li>-->
 								<li class="hb-form-field">
 									<div class="hb-form-field-input hb_input_field">
-										<select name="tourdestino" class="form-control">
+										<select name="tourdestino" class="form-control select-paquetes">
 											<?php $__currentLoopData = $destinos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $destino): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 									<option value="<?php echo e($destino->id); ?>" ><?php echo e($destino->destino); ?></option>
 											<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -165,12 +170,12 @@
 						<h3 class="title_primary">PROMOCIONES</h3><span class="line_after_title"></span>
 					</div>
 					<div class="row">
-						<div class="col-sm-4">
+						<div class="col-sm-4 mobile-promo">
 							<a href="<?php echo e(url('promociones')); ?>">
 <img src="/img/promociones.png">
 </a>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-4 mobile-promo">
 
 							<div class="promociones-slider">
 		<div><a href="<?php echo e(url('promociones',2)); ?>">
@@ -184,7 +189,7 @@
         </a></div>
     </div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-4 mobile-promo">
 							<a href="<?php echo e(url('bancos')); ?>">
 <img src="/img/promo_bancos.png">
 </a>
@@ -257,32 +262,35 @@
 
 
 <div class="row">
-			<div class="col-sm-6 siguenos-footer">
+			<div class="col-sm-6 suscripcion-footer">
 				<div class="sub-title">
-		<h3>siguenos en nuestras redes sociales y MANTENTE ACTUALIZADO CON LAS MEJORES OFERTAS</h3>
+					<h3>SÍGUENOS EN NUESTRAS REDES SOCIALES Y</h3>
+					<h3><strong>MANTENTE ACTUALIZADO</strong></h3>
+					<h3><strong>CON LAS MEJORES OFERTAS</strong></h3>
 	            </div>
 				            <div class="social">
 									<ul>
 										<li>
-											<a target="_blank" class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+											<a target="_blank" class="facebook" href="https://www.facebook.com/Columbia-Tours-178463502222553/"><i class="fa fa-facebook"></i></a>
 										</li>
 										<li>
-											<a target="_blank" class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+											<a target="_blank" class="twitter" href="https://mobile.twitter.com/columbiatourspa/"><i class="fa fa-twitter"></i></a>
 										</li>
 										<li>
-											<a target="_blank" class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+											<a target="_blank" class="pinterest" href="https://www.instagram.com/columbiatourspa/"><i class="fa fa-instagram"></i></a>
 										</li>
 										<li>
-											<a target="_blank" class="googleplus" href="#"><i class="fa fa-google"></i></a>
+											<a target="_blank" class="googleplus" href="https://www.youtube.com/user/Columbiatourspa/"><i class="fa fa-youtube"></i></a>
 										</li>
 									</ul>
 								</div>
 							</div>
 
-			<div class="col-sm-6 suscripcion-footer">
+			<div class="col-sm-6 siguenos-footer">
 				<div class="sub-title">
-		<h3>Registrate para RECIBIR NUESTRAS PROMOCIONES</h3>
-	            </div>
+					<h3>REGÍSTRATE PARA</h3>
+					<h3><strong>Recibir Nuestras Promociones</strong></h3>
+	      </div>
 
 			</div>
 
