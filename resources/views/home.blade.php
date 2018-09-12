@@ -21,7 +21,7 @@
 						<div class="container">
 							<!-- Tab links -->
 								<div class="tab">
-  								<button class="tablinks" onclick="openCity(event, 'London')">Amadeus</button>
+  								<button id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')" >Amadeus</button>
   								<button class="tablinks" onclick="openCity(event, 'Paris')">PullmanTour</button>
   								<button class="tablinks" onclick="openCity(event, 'Tokyo')">Assist Card</button>
 									<button class="tablinks" onclick="openCity(event, 'Hide')">Ocultar</button>
@@ -321,6 +321,8 @@ jQuery('#twidget').twidget({
 		default_origin: 'PTY',
 		default_destination: 'MIA'
 });
+
+document.getElementById("defaultOpen").click();
 </script>
 
 @endsection
