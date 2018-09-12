@@ -47,6 +47,25 @@ nav.width-navigation {
     height: 231px;
 }
 
+.btn-billing {
+  margin-bottom: 135px;
+}
+
+.btn-suscription  {
+    position: absolute;
+    left: 24%;
+    top: 37%;
+}
+
+a.lightbox-text-link {
+    color: #ffffff;
+    transition: 0.4s ease-in;
+}
+
+a.lightbox-text-link:hover {
+    color: #ffffff;
+}
+
 .col-sm-6.cotiza {
     text-align: center;
 }
@@ -143,7 +162,7 @@ ul.logos li {
 /* estilos redes sociales */
 
 .social {
-    
+
     margin-bottom: 0 !important;
     margin-top: 9px;
 }
@@ -166,7 +185,7 @@ ul.logos li {
     border-radius: 50%;
     display: inline-block;
     color: #fff;
-    background: #6ebe4d;  
+    background: #6ebe4d;
 }
 
 .social ul li a:hover {opacity: 0.8;}
@@ -176,7 +195,7 @@ ul.logos li {
 @media only screen and (max-width : 768px) {
 
     .wrapper-subscribe {
-    
+
     position: inherit;
 
 }
@@ -234,8 +253,8 @@ ul.top-social {
 .siguenos-footer h3 {
     color: #fff;
     line-height: 30px;
-    
-    
+
+
 }
 
 
@@ -251,8 +270,8 @@ ul.top-social {
 .suscripcion-footer h3 {
     color: #fff;
     line-height: 30px;
-    
-    
+
+
 }
 
 .sub-title {
@@ -296,6 +315,25 @@ ul.top-social {
 
 /* sub-header */
 
+.amadeus-iframe {
+  position: relative;
+  bottom: 185px;
+  left:40px;
+}
+
+@media only screen and (max-width:768px) {
+  .amadeus-iframe {
+    left: 0px;
+    bottom: 120px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  embed, iframe, object {
+    height: 100%;
+  }
+}
+
 .sub-header {
     padding-top: 203px;
 }
@@ -304,9 +342,71 @@ ul.top-social {
     padding-top: 203px;
 }
 
+@media only screen and (max-width:768px) {
+  .home-content {
+      padding-top: 100px;
+  }
+}
+
+  .amadeus-title {
+    margin-bottom: 70px;
+  }
+
 .circuito-page .top_site_main {
-    
+
     background-image: url(/img/banner-europa-asia-oriente.png);
     background-size: cover;
 }
 
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #0169ac;
+    color: #fff;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    color: #fff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #6ebe4d;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #6ebe4d;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 4px;
+    border-top: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media only screen and (max-width: 768px) {
+  .tabcontent {
+    background-color: rgba(0,0,0,1);
+  }
+}

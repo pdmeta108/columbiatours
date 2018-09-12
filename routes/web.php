@@ -17,7 +17,7 @@ $paquetes=App\Paquete::all();
 $paquetes = App\Paquete::where('categoria_id','1');
 
 return $paquetes;
-     return view('home',["paquetes"=>$paquetes]); 
+     return view('home',["paquetes"=>$paquetes]);
 }); */
 
 Route::get('/','PaquetesController@mostrar');
@@ -99,11 +99,3 @@ Route::get('terminosycondiciones', function () {
 Route::get('metodos-pago', function () {
     return view('footer.metodos-pago');
 });
-
-
-
-
-
-
-
-

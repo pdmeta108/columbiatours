@@ -26,7 +26,7 @@
 					<div class="top_content_single row">
 						<div class="images images_single_left">
 							<div class="title-single">
-								
+
 								<div class="tour_code">
 									<strong>Code: </strong>LMJUYH
 								</div>
@@ -38,7 +38,7 @@
 								<div class="meta_values">
 									<span></span>
 									<div class="value">
-										
+
 	                 <a href="{{URL::action('PaquetesController@paquetes',$categorias->id)}}" rel="tag">{{$categorias->nombre}}</a>
 									</div>
 								</div>
@@ -67,7 +67,7 @@
 									</li>
 									@endforeach
 									</ul>
-									</div> 
+									</div>
 									<div id="carousel" class="flexslider thumbnail_product">
 								<ul class="slides">
 									@foreach ($imagenes as $imagen)
@@ -77,43 +77,46 @@
 									@endforeach
 								</ul>
 							</div>
-								
-								
+
+
 							<p>{{$paquetes->descripcion}}</p>
 
 
                            <div style="display:none;" class="lista">
-                           	
+
 							<?php echo ($paquetes->incluye); ?>
 						</div>
 
 
 
 
-							
+
 							<div class="clear"></div>
 							<div class="single-tour-tabs wc-tabs-wrapper">
 								<ul class="tabs wc-tabs" role="tablist">
 									<li class="description_tab active" role="presentation">
-										<a href="#tab-description" role="tab" data-toggle="tab">Description</a>
+										<a href="#tab-description" role="tab" data-toggle="tab">Incluye</a>
 									</li>
 									<li class="itinerary_tab_tab" role="presentation">
-								<a href="#tab-itinerary_tab" role="tab" data-toggle="tab">Itinerary</a>
+								<a href="#tab-itinerary_tab" role="tab" data-toggle="tab">Itinerario</a>
+									</li>
+									<li class="itinerary_tab_tab" role="presentation">
+								<a href="#tab-hotel_prices_tab" role="tab" data-toggle="tab">Precios</a>
 									</li>
 									<li class="location_tab_tab" role="presentation">
-										<a href="#tab-location_tab" role="tab" data-toggle="tab">Location</a>
+										<a href="#tab-location_tab" role="tab" data-toggle="tab">T & C</a>
 									</li>
 									<li class="reviews_tab" role="presentation">
-										<a href="#tab-reviews" role="tab" data-toggle="tab">Reviews</a>
+										<a href="#tab-reviews" role="tab" data-toggle="tab">Descargar Paquete</a>
 									</li>
 								</ul>
 								<div class="tab-content">
 									<div role="tabpanel" class="tab-pane single-tour-tabs-panel single-tour-tabs-panel--description panel entry-content wc-tab active" id="tab-description">
-										
-										
+
+
 										<table class="tours-tabs_table">
 											<tbody>
-											
+
 
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script>
@@ -122,14 +125,14 @@ jQuery(".lista ul li").each(function(){
  document.write("<tr><td><i class='fa fa-check icon-tick icon-tick--on'></i>"+listado.text()+ "</br></td></tr>");
      });
 </script>
-											
-											
+
+
 											</tbody>
 										</table>
-										
+
 									</div>
 									<div role="tabpanel" class="tab-pane single-tour-tabs-panel single-tour-tabs-panel--itinerary_tab panel entry-content wc-tab" id="tab-itinerary_tab">
-										<div class="interary-item">
+										{{-- <div class="interary-item">
 											<p><span class="icon-left">1</span></p>
 											<div class="item_content">
 												<h2><strong>Day 1: Departure</strong></h2>
@@ -176,15 +179,32 @@ jQuery(".lista ul li").each(function(){
 											<div class="item_content">
 												<h2><strong>Day 6: Return</strong></h2>
 											</div>
-										</div>
+										</div> --}}
+										<div style="display:none;" class="lista2">
+			 <?php echo ($paquetes->itinerario); ?>
+		 </div>
+		 <script>
+		 jQuery(".lista2 ul li").each(function(i){
+			 var listado2=jQuery(this);
+			document.write("<div class=\"interary-item\"><p><span class=\"icon-left\">"+(i+1)+"</span></p><div class=\"item_content\"><p style=\"margin-top: 19px\">"+listado2.text()+"</p></div></div>");
+					});
+					i++;
+		 </script>
+									</div>
+									<div role="tabpanel" class="tab-pane single-tour-tabs-panel single-tour-tabs-panel--location_tab panel entry-content wc-tab" id="tab-hotel_prices_tab">
+										{{-- <div class="wrapper-gmap">
+											<div id="googleMapCanvas" class="google-map" data-lat="50.893577" data-long="-1.393483" data-address="European Way, Southampton, United Kingdom"></div>
+										</div> --}}
+										<?php echo ($paquetes->precios); ?>
 									</div>
 									<div role="tabpanel" class="tab-pane single-tour-tabs-panel single-tour-tabs-panel--location_tab panel entry-content wc-tab" id="tab-location_tab">
-										<div class="wrapper-gmap">
+										{{-- <div class="wrapper-gmap">
 											<div id="googleMapCanvas" class="google-map" data-lat="50.893577" data-long="-1.393483" data-address="European Way, Southampton, United Kingdom"></div>
-										</div>
+										</div> --}}
+										<?php echo ($paquetes->terminos); ?>
 									</div>
 									<div role="tabpanel" class="tab-pane single-tour-tabs-panel single-tour-tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews">
-										<div id="reviews" class="travel_tour-Reviews">
+										{{-- <div id="reviews" class="travel_tour-Reviews">
 											<div id="comments">
 												<h2 class="travel_tour-Reviews-title">1 review for
 													<span>Kiwiana Panorama</span></h2>
@@ -245,16 +265,21 @@ jQuery(".lista ul li").each(function(){
 												</div>
 											</div>
 											<div class="clear"></div>
-										</div>
+										</div> --}}
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus quam vel odio imperdiet, et viverra lorem tristique. Nullam sit amet dapibus turpis.</p>
+									<div class="btn-descarga"><a href="{{url('download',$paquetes->file)}}">Descargar Paquete</a></div>
 									</div>
 								</div>
 							</div>
-							
-							
+
+
 						</div>
 						<div class="summary entry-summary description_single">
 							<div class="affix-sidebar">
-								<div class="entry-content-tour">
+								<!-- www.123formbuilder.com script begins here -->
+<script type="text/javascript" defer src="//www.123formbuilder.com/embed/4146899.js" data-role="form" data-default-width="367px"></script>
+<!-- www.123formbuilder.com script ends here -->
+								{{-- <div class="entry-content-tour">
 									<p class="price">
 										<span class="text">Price:</span><span class="travel_tour-Price-amount amount">$93.00</span>
 									</p>
@@ -350,7 +375,7 @@ jQuery(".lista ul li").each(function(){
 											</form>
 										</div>
 									</div>
-								</div>
+								</div> --}}
 								<div class="widget-area align-left col-sm-3">
 									<aside class="widget widget_travel_tour">
 
@@ -360,15 +385,15 @@ jQuery(".lista ul li").each(function(){
 											<div class="inner-special-tours">
 							<a href="{{URL::action('PaquetesController@paquetedetalle',$destacado->id)}}">
 				<img width="430" height="305" src="/img/{{ $destacado->imagen_url}}" alt="" title=""></a>
-												
+
 												<div class="post_title"><h3>
 									<a href="single-tour.html" rel="bookmark">{{ $destacado->titulo}}</a>
 												</h3></div>
-												
+
 											</div>
 											@endforeach
 										</div>
-										
+
 									</aside>
 								</div>
 							</div>
@@ -382,7 +407,7 @@ jQuery(".lista ul li").each(function(){
 </div>
 
 
-	
+
 
 	@endsection
 
@@ -393,6 +418,4 @@ jQuery(".lista ul li").each(function(){
 <tr>
 <td><i class="fa fa-check icon-tick icon-tick--on"></i>
 </td>
-</tr>																																			
-	
-
+</tr>

@@ -4541,7 +4541,7 @@ input[type=radio]:checked:before {
 
 .site-header.affix-top {
 	position: absolute;
-	
+
 	z-index:  999;
 	width:    100%;
 }
@@ -6941,7 +6941,7 @@ input[type=radio]:checked:before {
 .content-slider {
 	position:   absolute;
 	z-index:    999;
-	top:        35%;
+	top:        20%;
 	left:       0;
 	right:      0;
 	text-align: center;

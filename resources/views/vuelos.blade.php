@@ -21,7 +21,9 @@
 		</div>
 		<div class="container">
 			<div class="row">
-		Aqui la vista de los vuelos
+				<!-- www.123formbuilder.com script begins here -->
+		<script type="text/javascript" defer src="//www.123formbuilder.com/embed/4111233.js" data-role="form" data-default-width="650px"></script>
+		<!-- www.123formbuilder.com script ends here -->
 </div>
 </div>
 	</div>

@@ -19,12 +19,15 @@
 	<link rel="stylesheet" href="/css/swipebox.min.css">
 	<link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
 
+	<link rel="stylesheet" type="text/css" href="/css/resetwidget.css">
+	<link rel="stylesheet" type="text/css" href="/css/twidgetstyle.css?v_1207">
+
 <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
 </head>
 @yield('body')
 <div class="wrapper-container">
 	<header id="masthead" class="site-header sticky_header affix-top">
-		
+
 @include('partials.nav')
 
 </header>
@@ -33,7 +36,7 @@
 <!--aqui va el contenido -->
 
 	<section class="content">
- 
+
 @yield('contenido')
 
 </section>
@@ -41,9 +44,10 @@
 <!---fin contenido-->
 
 @include('partials.footer')
-	
+
 </div>
 <script type='text/javascript' src='/js/jquery.min.js'></script>
+<script type='text/javascript' src='/js/jquery.twidget.js?v_1207'></script>
 <script type='text/javascript' src='/js/bootstrap.min.js'></script>
 <script type='text/javascript' src='/js/vendors.js'></script>
 <script type='text/javascript' src='/js/owl.carousel.min.js'></script>
@@ -54,6 +58,9 @@
 <script type='text/javascript' src="/js/jquery.flexslider-min.js"></script>
 <script type='text/javascript' src="/js/jquery.swipebox.min.js"></script>
 <script type="text/javascript" src="/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+<script type='text/javascript' src='/js/tabpanel.js'></script>
 @yield('scripts')
 </body>
 </html>
