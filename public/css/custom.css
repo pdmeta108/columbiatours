@@ -55,19 +55,39 @@ nav.width-navigation {
 }
 
 .cotiza {
-    background: url(/img/cotiza.png);
     height: 231px;
 }
 
 @media only screen and (max-width: 768px) {
   .cotiza {
-    height: 300px;
+    height: 405px;
   }
 }
 
-.suscripcion {
-    background: url(/img/suscripcion.png);
-    height: 231px;
+.suscripcion-bg {
+    background: url('/img/COTIFA-CON-NUESTROS-AGENTES-FONDO-2.png');
+}
+
+.suscripcion-m img {
+  display: block;
+  margin: 60px auto;
+}
+
+.col-sm-6.suscripcion-m {
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+  .suscripcion-m img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .suscripcion-m {
+    padding: 30px;
+  }
 }
 
 .btn-billing {
@@ -75,9 +95,11 @@ nav.width-navigation {
 }
 
 .btn-suscription  {
-    position: absolute;
-    left: 24%;
-    top: 37%;
+    margin-top: 35px;
+}
+
+.btn-registrateb {
+  margin-top: 42px;
 }
 
 a.lightbox-text-link {
@@ -94,7 +116,8 @@ a.lightbox-text-link:hover {
 }
 
 .cotiza img {
-    margin-right: 58px;
+  display: block;
+  margin: 2px auto;
 }
 
 .grupales i.lnr.lnr-chevron-right {
@@ -399,6 +422,54 @@ ul.top-social {
     background-size: cover;
 }
 
+.paquete-page .top_site_main {
+
+    background-image: url(/img/populares-fondo.png);
+    background-size: cover;
+}
+
+.cruceros .top_site_main {
+
+    background-image: url(/img/cruceros-min.png);
+    background-size: cover;
+}
+
+.vuelos .top_site_main {
+
+    background-image: url(/img/vuelos-min.png);
+    background-size: cover;
+}
+
+.trenes .top_site_main {
+
+    background-image: url(/img/trenes-min.png);
+    background-size: cover;
+}
+
+.autos .top_site_main {
+
+    background-image: url(/img/autos-min.png);
+    background-size: cover;
+}
+
+.seguros .top_site_main {
+
+    background-image: url(/img/seguros-min.png);
+    background-size: cover;
+}
+
+.contacto .top_site_main {
+
+    background-image: url(/img/populares-fondo.png);
+    background-size: cover;
+}
+
+.promociones .top_site_main {
+
+    background-image: url(/img/populares-fondo.png);
+    background-size: cover;
+}
+
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -454,7 +525,11 @@ ul.top-social {
 
 @media only screen and (max-width:768px) {
   .mobile-promo {
-    margin-left: 12%;
+    margin-left: 15%;
     margin-bottom: 30px;
   }
 }
+
+/* .modal-backdrop {
+  display:none;
+} */

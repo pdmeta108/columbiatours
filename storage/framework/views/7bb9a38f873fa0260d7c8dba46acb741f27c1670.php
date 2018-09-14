@@ -5,17 +5,25 @@
 <?php $__env->startSection('contenido'); ?>
 
 <div class="site wrapper-content">
-		<div class="top_site_main" style="background-image:url(images/banner/top-heading.jpg);">
-			<div class="banner-wrapper container article_heading">
-				<div class="breadcrumbs-wrapper">
-					<ul class="phys-breadcrumb">
-						<li><a href="index.html" class="home">Home</a></li>
-						<li><a href="blog.html">Business</a></li>
-						<li>Love advice from experts</li>
-					</ul>
-				</div>
-				<h2 class="heading_primary">Vuelos</h2></div>
-		</div>
+	<div class="sub-header">
+
+	<div class="top_site_main">
+				<div class="banner-wrapper container article_heading">
+					<div class="breadcrumbs-wrapper">
+						<ul class="phys-breadcrumb">
+							<li><a href="http://localhost:8000" class="home">Home</a></li>
+							<li><a href="http://localhost:8000/vuelos">Vuelos</a></li>
+							
+						</ul>
+					</div>
+					<h2 class="heading_primary">VUELOS</h2></div>
+			</div>
+
+	</div>
+
+	<!--suscripcion-->
+<?php echo $__env->make('partials.suscripcion', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
 		<div class="container">
 			<div class="row">
 				<!-- www.123formbuilder.com script begins here -->

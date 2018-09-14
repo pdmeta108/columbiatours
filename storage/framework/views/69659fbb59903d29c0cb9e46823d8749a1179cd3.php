@@ -6,9 +6,7 @@
 <div class="site wrapper-content">
 		<div class="home-content" role="main">
 			<div class="wrapper-bg-video">
-				<video poster="images/video_slider.jpg" playsinline autoplay muted loop>
-					<source src="http://physcode.com/video/330149744.mp4" type="video/mp4">
-				</video>
+				
 				<div class="content-slider">
 
 
@@ -290,6 +288,10 @@
 				<div class="sub-title">
 					<h3>REGÍSTRATE PARA</h3>
 					<h3><strong>Recibir Nuestras Promociones</strong></h3>
+					<button type="button" class="btn btn-default btn-registrateb">
+						
+	<script type="text/javascript" defer src="//www.123formbuilder.com/embed/4112564.js?type=lightbox" data-role="form" data-default-width="650px" data-embed-type="lightbox-text-link" data-embed-text-link="REG&Iacute;STRATE"></script>
+					</button>
 	      </div>
 
 			</div>

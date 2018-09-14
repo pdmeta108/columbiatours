@@ -1,16 +1,25 @@
 @extends ('layout')
 @section ('contenido')
 
+	@section ('body')
+	<body class="single-product promociones">
+	@endsection
+
 	<div class="site wrapper-content">
-		<div class="top_site_main" style="background-image:url(images/banner/top-heading.jpg);">
-			<div class="banner-wrapper container article_heading">
-				<div class="breadcrumbs-wrapper">
-					<ul class="phys-breadcrumb">
-						<li><a href="index.html" class="home">Home</a></li>
-						<li>Tours</li>
-					</ul>
+		<div class="sub-header">
+
+		<div class="top_site_main">
+					<div class="banner-wrapper container article_heading">
+						<div class="breadcrumbs-wrapper">
+							<ul class="phys-breadcrumb">
+								<li><a href="http://localhost:8000" class="home">Home</a></li>
+								<li><a href="http://localhost:8000/promociones">Promociones</a></li>
+								{{-- <li>Love advice from experts</li> --}}
+							</ul>
+						</div>
+						<h2 class="heading_primary">PROMOCIONES</h2></div>
 				</div>
-				<h1 class="heading_primary">Tours</h1></div>
+
 		</div>
 		<section class="content-area">
 			<div class="container">
@@ -23,7 +32,7 @@
 								<div class="item_border item-product">
 									<div class="post_images">
 						<a href="{{URL::action('PaquetesController@paquetedetalle',$promocion->id)}}">
-											
+
 											<img width="430" height="305" src="/img/{{$promocion->imagen_url}}" alt="" title="">
 										</a>
 										<div class="group-icon">
@@ -50,8 +59,8 @@
 									</div>
 								</div>
 							</li>
-							@endforeach 
-							
+							@endforeach
+
 						</ul>
 						<div class="navigation paging-navigation" role="navigation">
 							<ul class="page-numbers">
@@ -63,13 +72,13 @@
 						</div>
 					</div>
 					<div class="widget-area align-left col-sm-3">
-						
-								
+
+
 <!-- www.123formbuilder.com script begins here -->
 <script type="text/javascript" defer src="//www.123formbuilder.com/embed/3929344.js" data-role="form" data-default-width="313px"></script>
 <!-- www.123formbuilder.com script ends here -->
 
-							
+
 						<aside class="widget widget_travel_tour">
 							<div class="wrapper-special-tours">
 
@@ -87,11 +96,11 @@
 									<div class="post_title"><h3>
 					<a href="single-tour.html" rel="bookmark">{{$destacado->titulo}}</a>
 									</h3></div>
-									
+
 								</div>
-								@endforeach 
-								
-								
+								@endforeach
+
+
 							</div>
 						</aside>
 					</div>
@@ -101,13 +110,3 @@
 	</div>
 
                        @endsection
-
-
-                      
-
-
-
-                       
-
-
-                       
