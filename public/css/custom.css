@@ -1,5 +1,7 @@
 /*menu */
-
+.padding-blah {
+  padding-bottom: 60px;
+}
 .site-header .navbar-nav {
     text-align: center !important;
 }
@@ -422,10 +424,18 @@ ul.top-social {
     background-size: cover;
 }
 
+.circuito-page .content-slider {
+    position: static;
+}
+
 .paquete-page .top_site_main {
 
     background-image: url(/img/populares-fondo.png);
     background-size: cover;
+}
+
+.paquete-page .content-slider {
+    position: static;
 }
 
 .cruceros .top_site_main {
@@ -434,10 +444,18 @@ ul.top-social {
     background-size: cover;
 }
 
+.cruceros .content-slider {
+    position: static;
+}
+
 .vuelos .top_site_main {
 
     background-image: url(/img/vuelos-min.png);
     background-size: cover;
+}
+
+.vuelos .content-slider {
+    position: static;
 }
 
 .trenes .top_site_main {
@@ -446,10 +464,18 @@ ul.top-social {
     background-size: cover;
 }
 
+.trenes .content-slider {
+    position: static;
+}
+
 .autos .top_site_main {
 
     background-image: url(/img/autos-min.png);
     background-size: cover;
+}
+
+.autos .content-slider {
+    position: static;
 }
 
 .seguros .top_site_main {
@@ -458,16 +484,28 @@ ul.top-social {
     background-size: cover;
 }
 
+.seguros .content-slider {
+    position: static;
+}
+
 .contacto .top_site_main {
 
     background-image: url(/img/populares-fondo.png);
     background-size: cover;
 }
 
+.contacto .content-slider {
+    position: static;
+}
+
 .promociones .top_site_main {
 
     background-image: url(/img/populares-fondo.png);
     background-size: cover;
+}
+
+.promociones .content-slider {
+    position: static;
 }
 
 /* Style the tab */
