@@ -9,7 +9,7 @@
 				
 
 				<?php echo $__env->make('partials.provider', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-				
+
 			</div>
 
 			<div class="slider-tour-booking">
@@ -17,7 +17,7 @@
 					<div class="row travel-booking-search hotel-booking-search travel-booking-style_1">
 
 
-	<?php echo Form::open(array('url'=>'paquetes/destinos','method'=>'GET','autocomplete'=>'off','role'=>'search')); ?>
+			<?php echo Form::open(array('url'=>'paquetes/destinos','method'=>'GET','autocomplete'=>'off','role'=>'search')); ?>
 
 
 							<ul class="hb-form-table form-paquetes">
@@ -43,7 +43,7 @@
 
 								<li class="hb-submit">
 									<button type="submit">Buscar Paquetes</button>
-                                </li>
+																</li>
 							</ul>
 							<input type="hidden" name="lang" value="">
 

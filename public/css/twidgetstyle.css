@@ -18,7 +18,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .clearfix:after, .clearfix:before {content:""; display:table;}
 .clearfix:after{clear:both;}
 .twidget-container {font-family:'Open Sans', arial, sans-serif; font-size:14px; line-height:1; color:#424242;}
-.twidget-container{padding-top:0; width:1170px; margin-left:auto; margin-right:auto;}
+.twidget-container{padding-top:0; margin-left:auto; margin-right:auto;}
 .twidget-container input[type="text"], .twidget-container input[type="email"],  .twidget-container input[type="date"]{border:none; outline:none; background-color:#fff; color:#424242; font-family:'Open Sans', arial, sans-serif; font-size: 14px; }
 .twidget-container input::-ms-clear {display: none;}
 .twidget-tab-content button{font-family:'Open Sans', arial, sans-serif; font-weight:600; outline:none; cursor:pointer; font-size:18px; border:none; background:none; }

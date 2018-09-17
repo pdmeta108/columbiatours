@@ -6859,6 +6859,12 @@ input[type=radio]:checked:before {
 	background: url('../img/banner-europa-asia-oriente.png');
 }
 
+@media only screen and (min-width: 1900px) {
+	.wrapper-bg-video {
+		padding-bottom: 25.25%;
+	}
+}
+
 .wrapper-bg-video video {
 	position: absolute;
 	top:      0;
