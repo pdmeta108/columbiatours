@@ -38,9 +38,9 @@ public function create()
     }
 
     public function store (PaqueteFormRequest $request)
-    
+
     {
-        
+
         $destinos=Destino::all();
         $categorias=Categoria::all();
         $promociones=Promocion::all();
@@ -49,7 +49,7 @@ public function create()
         $paquete = Paquete::create(['titulo' => $request->get('titulo')]);
 
 
-        
+
         return view("admin.paquetes.edit",["paquete"=>$paquete,"destinos"=>$destinos,"categorias"=>$categorias,"promociones"=>$promociones,"bancos"=>$bancos,"proveedores"=>$proveedores]);
     }
 
@@ -57,11 +57,11 @@ public function create()
     {
         return view("admin.paquetes.show",["paquete"=>Paquete::findOrFail($id)]);
     }
-    
+
     public function edit($id)
     {
 
-      /* este edit lo utiliza solo cuando entra por el boton edit del index */  
+      /* este edit lo utiliza solo cuando entra por el boton edit del index */
 
         $paquete=Paquete::findOrFail($id);
         $destinos=Destino::all();
@@ -69,14 +69,14 @@ public function create()
         $promociones=Promocion::all();
         $bancos=Banco::all();
         $proveedores=Proveedor::all();
-        
+
         /* $destinos = Destino::where('id', '=', $paquete->destino_id)->first(); */
-        
-       
+
+
         return view("admin.paquetes.edit",["paquete"=>$paquete,"destinos"=>$destinos,"categorias"=>$categorias,"promociones"=>$promociones,"bancos"=>$bancos,"proveedores"=>$proveedores]);
 
-        
-        
+
+
     }
 
     public function update(PaqueteFormRequest $request,$id)
@@ -88,7 +88,7 @@ public function create()
     $paquete=Paquete::findOrFail($id);
 $path = DB::table('imagenes')->where('paquete_id','=',$id)->orderby('created_at','DESC')->take(1)->first();
     $path2= $path->url;
-        
+
         $paquete->titulo=$request->get('titulo');
         $paquete->descripcion=$request->get('descripcion');
         $paquete->categoria_id=$request->get('categoria');
@@ -111,7 +111,7 @@ $path = DB::table('imagenes')->where('paquete_id','=',$id)->orderby('created_at'
     public function destroy($id)
     {
         $paquete=Paquete::findOrFail($id);
-        
+
         $paquete->delete();
         return Redirect::to('admin/paquetes');
     }
@@ -120,62 +120,55 @@ $path = DB::table('imagenes')->where('paquete_id','=',$id)->orderby('created_at'
 /* envia los parametros que se usaran en el home */
 
     public function mostrar()
-    
+
     {
 
-        $destinos=Destino::all();
+        // $destinos=Destino::all();
         $categorias=Categoria::all();
         $paquetes = DB::table('paquetes')->where('categoria_id', '1')->get();
         $destacados= DB::table('paquetes')->where('destacado', '1')->get();
 
-        return view('home',["paquetes"=>$paquetes,"destacados"=>$destacados,"destinos"=>$destinos,"categorias"=>$categorias]);
+        return view('home',["paquetes"=>$paquetes,"destacados"=>$destacados,"categorias"=>$categorias]);
 
-        
-        
+
+
     }
 
-    public function subheader()
-    
-    {
-
-        
-        $destinos=Destino::all();
-        
-
-        return view('partials.sub-header',["destinos"=>$destinos]);
-
-        
-        
-    }
+    // public function suscripcion()
+    //
+    // {
+    //     $destinos=Destino::all();
+    //     return view('partials.suscripcion',["destinos"=>$destinos]);
+    // }
 
 public function indexpaquetes()
-    
+
     {
 
-        
+
 $paquetes = Paquete::all();
 $destacados= DB::table('paquetes')->where('destacado', '1')->get();
         return view("paquetes",["paquetes"=>$paquetes,"destacados"=>$destacados]);
 }
 
 public function destinos(Request $request)
-    
+
     {
 
-        
 
-        if ($request) 
+
+        if ($request)
         {
-            
+
             $query=trim($request->get('tourdestino'));
     $paquetes=DB::table('paquetes')->where('categoria_id','=',$query)->get();
-           
-        
+
+
   } else {
 
 
  echo 'no hay paquetes';
- 
+
 
  }
 
@@ -184,13 +177,13 @@ $destacados= DB::table('paquetes')->where('destacado', '1')->get();
 }
 
     public function paquetes($id)
-    
+
     {
 
- 
+
 
   $paquetes= DB::table('paquetes')->where('categoria_id', '=',$id)->get();
-  
+
 
  $destacados= DB::table('paquetes')->where('destacado', '1')->get();
 
@@ -198,39 +191,39 @@ $destacados= DB::table('paquetes')->where('destacado', '1')->get();
 }
 
      public function promociones() /* todas las promociones */
-    
+
     {
         $promociones= DB::table('paquetes')->where('promocion_id', '<>', null)->get();
         $destacados= DB::table('paquetes')->where('destacado', '1')->get();
-        
+
 
         return view("promociones",["promociones"=>$promociones,"destacados"=>$destacados]);
 }
 
 public function promocategoria($id) /* promociones por categoria */
-    
+
     {
-        
+
         $promociones= DB::table('paquetes')->where('promocion_id','=',$id)->get();
         $destacados= DB::table('paquetes')->where('destacado', '1')->get();
 
-        
+
         return view("promociones",["promociones"=>$promociones,"destacados"=>$destacados]);
 }
 
 public function bancos() /* pagina de logo de los bancos */
-    
+
     {
         $bancos=Banco::all();
-        
+
 
         return view("bancos-logos",["bancos"=>$bancos]);
 }
 
 public function bancospaquetes($id) /* promociones por categoria bancaria */
-    
+
     {
-                
+
 $promociones= DB::table('paquetes')->where('banco_id','=',$id)->get();
 $destacados= DB::table('paquetes')->where('destacado', '1')->get();
 
@@ -238,7 +231,7 @@ $destacados= DB::table('paquetes')->where('destacado', '1')->get();
 }
 
 public function paquetedetalle($id)
-    
+
     {
 
  $paquetes=Paquete::findOrFail($id);
@@ -248,7 +241,7 @@ public function paquetedetalle($id)
  $imagenes = DB::table('imagenes')->where('paquete_id','=',$id)->get();
  $destacados= DB::table('paquetes')->where('destacado', '=' ,1)->take(2)->get();
  echo $categoria;
-                
+
 if ($categoria <> 1){
 
      return view("detalle",["paquetes"=>$paquetes,"imagenes"=>$imagenes,"destacados"=>$destacados,"categorias"=>$categorias]);
@@ -263,72 +256,72 @@ return view("detalle-grupales",["paquetes"=>$paquetes,"imagenes"=>$imagenes,"des
 
 /* vistas internas normales */
 
-public function circuitos() 
-    
+public function circuitos()
+
     {
-                
-$destinos=Destino::all();
-        return view("circuitos_asia-europa-oriente",["destinos"=>$destinos]);
+
+// $destinos=Destino::all();
+        return view("circuitos_asia-europa-oriente");
 }
 
-public function cruceros() 
-    
+public function cruceros()
+
     {
-                
+
 $cruceros=Proveedor::all();
 
         return view("cruceros",["cruceros"=>$cruceros]);
 }
 
-public function crucerospaquetes($id) 
-    
+public function crucerospaquetes($id)
+
     {
-                
+
 $promociones= DB::table('paquetes')->where('proveedor_id','=',$id)->get();
 $destacados= DB::table('paquetes')->where('destacado', '1')->get();
 
         return view("promociones",["promociones"=>$promociones,"destacados"=>$destacados]);
 
-        
+
 }
 
-public function vuelos() 
-    
+public function vuelos()
+
     {
-                
+
 
         return view("vuelos");
 }
 
-public function trenes() 
-    
+public function trenes()
+
     {
-                
+
 
         return view("trenes");
 }
 
-public function autos() 
-    
+public function autos()
+
     {
 
-     $paquetes= DB::table('paquetes')->where('proveedor_id','=',8)->get();           
+     $paquetes= DB::table('paquetes')->where('proveedor_id','=',8)->get();
 
         return view("autos",["paquetes"=>$paquetes]);
 }
 
-public function seguros() 
-    
+public function seguros()
+
     {
-                
+
 
         return view("seguros");
 }
 
-public function contacto() 
-    
+public function contacto()
+
     {
-                
+
 
         return view("contacto");
 }
@@ -344,6 +337,3 @@ public function downloadFile($file){
 
 
 }
-
-
-

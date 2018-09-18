@@ -1,3 +1,42 @@
+<div class="slider-tour-booking">
+	<div class="container">
+		<div class="row travel-booking-search hotel-booking-search travel-booking-style_1">
+
+
+{!! Form::open(array('url'=>'paquetes/destinos','method'=>'GET','autocomplete'=>'off','role'=>'search')) !!}
+
+				<ul class="hb-form-table form-paquetes">
+
+					{{-- <!--<li class="hb-form-field">
+						<div class="hb-form-field-input hb_input_field">
+
+							<select name="tour" class="form-control">
+								@foreach ($categorias as $categoria)
+						<option value="{{ $categoria->id }}" >{{ $categoria->nombre}}</option>
+								@endforeach
+							</select>
+						</div>
+					</li>--> --}}
+					<li class="hb-form-field">
+						<div class="hb-form-field-input hb_input_field">
+							<select name="tourdestino" class="form-control select-paquetes">
+								@foreach ($destinos as $destino)
+						<option value="{{ $destino->id }}" >{{ $destino->destino}}</option>
+								@endforeach
+							</select></div>
+					</li>
+
+					<li class="hb-submit">
+						<button type="submit">Buscar Paquetes</button>
+													</li>
+				</ul>
+				<input type="hidden" name="lang" value="">
+
+			{!!Form::close()!!}
+		</div>
+	</div>
+</div>
+
 <section class="suscripcion-bg">
 		<div class="row">
 			<div class="col-sm-6 cotiza">

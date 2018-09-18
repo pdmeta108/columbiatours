@@ -18,14 +18,15 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
 				<div class="banner-wrapper container article_heading">
-					<div class="breadcrumbs-wrapper">
+					{{-- <div class="breadcrumbs-wrapper">
 						<ul class="phys-breadcrumb">
 							<li><a href="http://localhost:8000" class="home">Home</a></li>
 							<li><a href="http://localhost:8000/circuitos">Circuitos</a></li>
-							{{-- <li>Love advice from experts</li> --}}
+							<li>Love advice from experts</li>
 						</ul>
 					</div>
-					<h2 class="heading_primary">CIRCUITOS ASIA-EUROPA-ORIENTE</h2></div>
+					<h2 class="heading_primary">CIRCUITOS ASIA-EUROPA-ORIENTE</h2> --}}
+				</div>
 			</div>
 		</div>
 			</div>

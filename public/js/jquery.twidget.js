@@ -916,10 +916,10 @@
             '        <div class="twidget-tab-content">'+
             '            <!--flight tab content-->'+
             '            <div id="twidget-tab1" class="twidget-tab active">'+
-            '                <div class="twidget-header" ' + (_this.settings.open_in_new_tab ? 'target="_blank"' : '') + '>'+
-            '                    <a href="' + _this.settings.localization.avia_logo_link + '?marker=' + _this.settings.marker + '" class="twidget-logo">' + _this.settings.localization.avia_logo_content + '</a>'+
-            '                    <a href="' + _this.settings.localization.avia_logo_link + '?marker=' + _this.settings.marker + '" class="twidget-title">'+_this.settings.localization.avia_logo_caption+'</a>'+
-            '                </div>'+
+            // '                <div class="twidget-header" ' + (_this.settings.open_in_new_tab ? 'target="_blank"' : '') + '>'+
+            // '                    <a href="' + _this.settings.localization.avia_logo_link + '?marker=' + _this.settings.marker + '" class="twidget-logo">' + _this.settings.localization.avia_logo_content + '</a>'+
+            // '                    <a href="' + _this.settings.localization.avia_logo_link + '?marker=' + _this.settings.marker + '" class="twidget-title">'+_this.settings.localization.avia_logo_caption+'</a>'+
+            // '                </div>'+
             '                <div class="clearfix"></div>'+
             '                <form action="' + _this.settings.localization.avia_submit_domain + '" method="get" autocomplete="off" role="search" ' + (_this.settings.open_in_new_tab ? 'target="_blank"' : '') + '>'+
             '                    <ul class="twidget-form-list clearfix">'+

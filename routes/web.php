@@ -42,7 +42,7 @@ Route::get('paquetes','PaquetesController@indexpaquetes'); /* todos los paquetes
 
 Route::get('paquetes/destinos','PaquetesController@destinos'); /* filtrado de paquetes por destino */
 
-Route::get('sub-header','PaquetesController@subheader'); /* vista general del sub-header */
+// Route::get('suscripcion','PaquetesController@suscripcion');
 
 Route::get('paquetes/{id}','PaquetesController@paquetes')->name('paquetes.categoria'); /* paquetes por categoria */
 

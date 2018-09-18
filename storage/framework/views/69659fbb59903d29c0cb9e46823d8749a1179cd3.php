@@ -12,46 +12,6 @@
 
 			</div>
 
-			<div class="slider-tour-booking">
-				<div class="container">
-					<div class="row travel-booking-search hotel-booking-search travel-booking-style_1">
-
-
-			<?php echo Form::open(array('url'=>'paquetes/destinos','method'=>'GET','autocomplete'=>'off','role'=>'search')); ?>
-
-
-							<ul class="hb-form-table form-paquetes">
-
-								<!--<li class="hb-form-field">
-									<div class="hb-form-field-input hb_input_field">
-
-										<select name="tour" class="form-control">
-											<?php $__currentLoopData = $categorias; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoria): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-									<option value="<?php echo e($categoria->id); ?>" ><?php echo e($categoria->nombre); ?></option>
-											<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-										</select>
-									</div>
-								</li>-->
-								<li class="hb-form-field">
-									<div class="hb-form-field-input hb_input_field">
-										<select name="tourdestino" class="form-control select-paquetes">
-											<?php $__currentLoopData = $destinos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $destino): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-									<option value="<?php echo e($destino->id); ?>" ><?php echo e($destino->destino); ?></option>
-											<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-										</select></div>
-								</li>
-
-								<li class="hb-submit">
-									<button type="submit">Buscar Paquetes</button>
-																</li>
-							</ul>
-							<input type="hidden" name="lang" value="">
-
-						<?php echo Form::close(); ?>
-
-					</div>
-				</div>
-			</div>
 
 		<!--suscripcion-->
 <?php echo $__env->make('partials.suscripcion', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

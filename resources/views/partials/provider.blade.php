@@ -6,9 +6,9 @@
       <div class="container" style="width: 90%">
         <!-- Tab links -->
           <div class="tab">
-            <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')" >Amadeus</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">PullmanTour</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Assist Card</button>
+            <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')" >Vuelos</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Hoteles</button>
+            {{-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Assist Card</button> --}}
             <button class="tablinks" onclick="openCity(event, 'Hide')">Ocultar</button>
           </div>
 
@@ -25,10 +25,10 @@
             <p>Paris is the capital of France.</p>
           </div>
 
-          <div id="Tokyo" class="tabcontent">
-            {{-- <h3>Tokyo</h3> --}}
+          {{-- <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
             <p>Tokyo is the capital of Japan.</p>
-          </div>
+          </div> --}}
           <div id="Hide" class="tabcontent" style="padding: 0; border: none">
             {{-- <h3>Tokyo</h3> --}}
             {{-- <p>Tokyo is the capital of Japan.</p> --}}

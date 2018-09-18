@@ -16,13 +16,14 @@
 
 						<div class="banner-wrapper container article_heading">
 							<div class="breadcrumbs-wrapper">
-								<ul class="phys-breadcrumb">
+								{{-- <ul class="phys-breadcrumb">
 									<li><a href="http://localhost:8000" class="home">Home</a></li>
 									<li><a href="http://localhost:8000/paquetes">Paquetes</a></li>
-									{{-- <li>Love advice from experts</li> --}}
+									<li>Love advice from experts</li>
 								</ul>
 							</div>
-							<h2 class="heading_primary">PAQUETES</h2></div>
+							<h2 class="heading_primary">PAQUETES</h2> --}}
+						</div>
 					</div>
 				</div>
 			</div>
